@@ -5,7 +5,8 @@ internal class Program
     static void Main(string[] args)
     {
         //baitap01();
-        baitap02();
+        //baitap02();
+        baitap03();
     }
     static void baitap01()
     {
@@ -25,4 +26,7 @@ internal class Program
         Console.WriteLine("ban kinh cua hinh tron la: {0}", bk);
         Console.WriteLine("dien tich cua hinh tron la: {0}", S);
     }
+    static void baitap03(){
+    Console.WriteLine("Hello");
+}
 }
