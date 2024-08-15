@@ -7,8 +7,10 @@
         //baitap03();
         //baitap04();
         //baitap05();
+        //baitap06();
         //baitap08();
         //baitap09();
+        baitap10();
     }
     static void baitap01()
     {
@@ -59,6 +61,18 @@
         double fahrenheit = (celsius * 9 / 5) + 32;
         Console.WriteLine($"{celsius} doi qua fahrenheit la {fahrenheit}");
     }
+    static void baitap06()
+ {
+     Console.WriteLine("sizeof(char)     : {0}", sizeof(char));
+     Console.WriteLine("sizeof(byte)     : {0}", sizeof(byte));
+     Console.WriteLine("sizeof(sbyte)    : {0}", sizeof(sbyte));
+     Console.WriteLine("sizeof(float)    : {0}", sizeof(float));
+     Console.WriteLine("sizeof(ushort)   : {0}", sizeof(ushort));
+     Console.WriteLine("sizeof(double)   : {0}", sizeof(double));
+     Console.WriteLine("sizeof(int)      : {0}", sizeof(int));
+     Console.WriteLine("sizeof(bool)     : {0}", sizeof(bool));
+     Console.WriteLine("sizeof(short)    : {0}", sizeof(short));
+ }
     static void baitap08() {
         Console.WriteLine("Nhap vao ban kinh hinh tron ");
         string r_string = Console.ReadLine();
@@ -75,4 +89,13 @@
         double S = a * a;
         Console.WriteLine($"Dien tich hinh vuong canh {a} la {S}");
     }
+     static void baitap10() {
+    Console.WriteLine("Nhap vao so ngay");
+    string numDays_str = Console.ReadLine();
+    double numDays = Convert.ToInt32(numDays_str);
+    double years = Math.Floor(numDays / 365);
+    double weeks = Math.Floor((numDays - years * 365) / 7);
+    double days = numDays - (years * 365 + weeks * 7);
+    Console.WriteLine($"Tu {numDays} ngay co {years} nam {weeks} tuan {days} ngay");
+}
 }
